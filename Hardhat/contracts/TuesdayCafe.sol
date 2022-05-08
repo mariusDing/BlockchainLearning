@@ -69,10 +69,10 @@ contract TuesdayCafe {
     }
     
     function seedReviews() public {
-        reviews.push(Review("Peter", "4.5"));
-        reviews.push(Review("Steven", "5"));
-        reviews.push(Review("Thor", "3.5"));
-        reviews.push(Review("Groot", "4"));
+        reviews.push(Review("Peter", "3"));
+        reviews.push(Review("Steven", "2.5"));
+        reviews.push(Review("Thor", "5"));
+        reviews.push(Review("Groot", "3.5"));
     }
 
     function random(uint number) public view returns(uint){
