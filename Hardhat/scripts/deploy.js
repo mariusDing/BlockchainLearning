@@ -10,7 +10,8 @@ const main = async () => {
     // Compile contract by Solidity compiler
     const factory = await hre.ethers.getContractFactory("TuesdayCafe");
 
-    // Create a local Ethereum network and deploy the contract. 
+    // Create a local Ethereum network and deploy the contract.
+    // Generaete ABI(Application Binary Interface) and deployed bytes
     const contract = await factory.deploy();
 
     // Waiting contract deploy
@@ -23,6 +24,7 @@ const main = async () => {
     // Seeding
     await contract.seedReviews();
 
+    // // Testing code in local net
     // await contract.addReview("Marius","5");
     // let reviews = await contract.getReviews();
     // console.log(reviews);

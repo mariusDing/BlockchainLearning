@@ -75,7 +75,7 @@ contract TuesdayCafe {
         reviews.push(Review("Groot", "3.5"));
     }
 
-    function random(uint number) public view returns(uint){
+    function random(uint number) private view returns(uint){
         return uint(keccak256(abi.encodePacked(block.timestamp, block.difficulty, msg.sender))) % number;
     }
 }
